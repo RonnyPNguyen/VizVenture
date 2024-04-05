@@ -1,0 +1,10 @@
+@import url(../Resource/stylesheet/masterStyles.css);
+
+.about-section {
+	font-size: 13px;
+	line-height: 2;
+}
+
+.about-content {
+	padding: 0 100px;
+}

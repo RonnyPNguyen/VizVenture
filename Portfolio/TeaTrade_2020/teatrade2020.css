@@ -1,0 +1,27 @@
+/* Sankey Chart Construction */
+#sankey-viz {
+	height: 500px;
+}
+
+.nodes rect {
+	cursor: move;
+	fill-opacity: 0.8;
+	shape-rendering: crispEdges;
+}
+.nodes rect:hover {
+	fill-opacity: 1;
+}
+
+.nodes text {
+	pointer-events: none;
+	font-size: 10px;
+}
+
+.link {
+	fill: none;
+	stroke-opacity: 0.4;
+}
+
+.link:hover {
+	stroke-opacity: 0.8;
+}

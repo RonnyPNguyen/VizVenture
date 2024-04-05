@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Asia Air Quality 2023</title>
+		<base href="http://127.0.0.1:5500/" />
+
+		<!-- D3.js API -->
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+
+		<!-- Font API -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Style Sheet -->
+		<link
+			rel="stylesheet"
+			href="Portfolio/Asia_AirQuality_2023/asiaaqi2023.css"
+		/>
+		<link rel="stylesheet" href="Resource/stylesheet/masterStyles.css" />
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header class="nav-bar">
+			<nav>
+				<a class="nav-logo" href="index.html">
+					<img class="logo-icon" src="Resource/images/logo-icon.png" />
+				</a>
+				<ul class="nav-links">
+					<li><a href="Portfolio/portfolio.html">Portfolio</a></li>
+					<li><a href="About/about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Snakey Chart Section -->
+		<section class="bg">
+			<br />
+			<br />
+			<h1>Asia Air Quality Report 2023</h1>
+			<br />
+			<h2 class="sub-heading">
+				Air pollution in the Asia region is a major health risk which also has
+				damaging impacts on economic growth, the environment, and agricultural
+				crop yields.
+			</h2>
+			<br />
+			<br />
+			<div class="graphic-container" id="ridge-line"></div>
+			<p class="reference-notes">
+				<a
+					href="https://www.kaggle.com/datasets/shruthiiiee/asia-2023-air-report-2000-cities"
+					><i>Average Air Quality Index by country. Source: Kaggle</i></a
+				>
+			</p>
+			<br />
+			<br />
+			<p class="copy-content">
+				While Asia is known for its at times problematic air quality, pollution
+				levels still vary widely across the continent and there are also a few
+				positive examples. The graph illustrates the average Air Quality Index
+				(AQI) of each reported country during 12 months of the year. The color
+				scale represents different levels of air quality, ranging from "good"
+				(0-12), "moderate" (12.1-35.4), "unhealthy" (35.5-55.4), to "severe
+				health risk" (55.5+).
+			</p>
+			<p class="copy-content">
+				In the comprehensive survey encompassing 36 Asian countries and regional
+				economies, the findings reveal a prevailing trend: the majority fall
+				under the category of moderate air quality. Specifically, 25 nations
+				exhibit moderate air quality, while 10 contend with severe air
+				conditions. Remarkably, only one nation boasts good air quality,
+				underscoring the concerning state of air pollution across the region.
+			</p>
+			<p class="copy-content">
+				Indeed, Japan attained the highest air quality index ratings, while
+				Taiwan and Singapore narrowly missed this label by less 2.5 micrograms
+				per cubic meter. The Philippines and Hong Kong SAR both experienced
+				PM2.5 level below 17 milligrams, securing positions in the top 5
+				cleanest air rankings in Asia.
+			</p>
+			<p class="copy-content">
+				On the other hand, Bangladesh ranked first among 36 countries in the
+				Asian region for having the poorest air quality. Pakistan and India were
+				closely behind in the rankings. The report emphasized that South Asia
+				faces the most severe pollution worldwide. Bangladesh's PM2.5 levels
+				stand at 80.23 micrograms per cubic metre, nearly 16 times higher than
+				the WHO recommends. Pakistan scored 57.17 while India's air had 47.49
+				micrograms of PM2.5 particles per cubic metre on average over the last
+				year.
+			</p>
+			<p class="copy-content">
+				In summary, the survey across 36 Asian countries and regional economies
+				in 2023 reveals widespread moderate to severe air quality issues
+				throughout the region. Japan stands out for its good air quality index
+				ratings, while Bangladesh leads with the poorest air quality, closely
+				followed by Pakistan and India. This underscores the urgent need for
+				immediate measures to address severe pollution, particularly in Asia's
+				southern region.
+			</p>
+			<script src="Portfolio/Asia_AirQuality_2023/asiaaqi2023.js"></script>
+			<br />
+			<br />
+			<div class="button-container">
+				<a href="Portfolio/portfolio.html"
+					><button class="back-button">Back to Portfolio</button></a
+				>
+			</div>
+		</section>
+		<br />
+		<br />
+
+		<!-- Footer Section -->
+		<footer class="bg-light" id="my-footer">
+			<div class="footer-container" id="Copyright">
+				<p>Copyright by Viz Venture 2024</p>
+			</div>
+			<div class="footer-container" id="Policy">
+				<a href="/About/about.html">by Ronny</a>
+				<a href="">NSW, Australia</a>
+			</div>
+		</footer>
+	</body>
+</html>

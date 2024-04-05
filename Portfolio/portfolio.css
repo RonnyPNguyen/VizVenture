@@ -1,0 +1,58 @@
+@import url(../Resource/stylesheet/masterStyles.css);
+.row-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+	margin: 0;
+	gap: 20px;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.image-container {
+	height: 360px;
+	width: 360px;
+	margin: 0;
+}
+.image-container a {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+.image-container a img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+.image-container a p {
+	margin: 8px 0;
+	font-size: 12px;
+}
+
+.image-container:hover {
+	box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 800px) {
+	.row-container {
+		width: 96vw;
+		margin: 0 2vw;
+	}
+	.image-container {
+		height: 45vw;
+		width: 45vw;
+	}
+	.image-container a {
+		font-size: 1.5vw;
+	}
+	#gallery-content h1 {
+		width: 100vw;
+	}
+}
