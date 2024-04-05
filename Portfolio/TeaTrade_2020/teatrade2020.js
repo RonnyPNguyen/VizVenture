@@ -1,4 +1,4 @@
-var data = d3.json("Portfolio/TeaTrade_2020/data/tea_trade.json");
+var data = d3.json("data/tea_trade.json");
 data
 	.then(function (data) {
 		sankeyChart(data);
