@@ -1,6 +1,4 @@
-var airquality = d3.json(
-	"Portfolio/Asia_AirQuality_2023/data/asiaaqi2023.json"
-);
+var airquality = d3.json("data/asiaaqi2023.json");
 airquality
 	.then(function (data) {
 		ridgeLine(data);
