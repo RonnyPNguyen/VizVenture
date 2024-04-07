@@ -28,7 +28,7 @@ body {
 }
 
 .bg {
-	width: 800px;
+	width: 1000px;
 	margin: 0 auto;
 }
 .bg h1,
@@ -193,7 +193,7 @@ footer {
 }
 
 /* Small screen configuration */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	.bg {
 		width: 100vw;
 	}
