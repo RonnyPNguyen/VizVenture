@@ -40,7 +40,7 @@
 	box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	.row-container {
 		width: 96vw;
 		margin: 0 2vw;
