@@ -119,14 +119,15 @@ function ridgeLine(airquality) {
 		}) // You can change the color as needed
 		.attr("fill-opacity", 0.4) // Adjust opacity as needed
 		.attr("d", (d) => area(d.values))
-		.append("title") // Add tooltip
+		.append("title")
 		.text(
 			(d) => `Country: ${d.name}, Average AQI: ${d3.mean(d.values).toFixed(2)}`
-		)
-		.attr("class", "tool-tips");
+		);
+
 	// Append lines for each series.
 	group
 		.append("path")
+		.attr("class", "area-line")
 		.attr("fill", "none")
 		.attr("stroke", function (d) {
 			let grp = d.name;
@@ -136,6 +137,29 @@ function ridgeLine(airquality) {
 		}) // You can change the color as needed
 		.attr("stroke-width", 1) // Adjust stroke width as needed
 		.attr("d", (d) => line(d.values));
+
+	group
+		.selectAll(".area-path")
+		.on("mouseover", function () {
+			group.selectAll(".area-path").attr("fill", "rgba(128, 128, 128, 0.3)");
+			d3.select(this)
+				.attr("fill", function (d) {
+					let hoverColor = color(normalizedMeans[countries.indexOf(d.name)]);
+					return hoverColor;
+				})
+				.attr("fill-opacity", 1);
+		})
+		.on("mouseout", function () {
+			group
+				.selectAll(".area-path")
+				.attr("fill", function (d) {
+					let grp = d.name;
+					let index = countries.indexOf(grp);
+					let value = normalizedMeans[index];
+					return color(value);
+				}) // You can change the color as needed
+				.attr("fill-opacity", 0.4);
+		});
 
 	// Append color legend
 	var color = d3
@@ -172,7 +196,7 @@ function ridgeLine(airquality) {
 		.attr("ry", 2) // vertical radius
 		.attr("width", marginRight / 4)
 		.attr("height", height - marginBottom - cell)
-		.style("fill", "url(#color-gradient)");
+		.attr("fill", "url(#color-gradient)");
 
 	var doS = height - marginBottom - cell;
 	// Append color legend axis
