@@ -21,24 +21,25 @@ function streamGraph(altcoin) {
 		marginLeft = 50;
 
 	var keys = altcoin.columns.slice(1);
-	console.log(
-		d3.extent(altcoin, function (d) {
-			console.log(d.date);
-		})
-	);
-	// Add X axis
-	var x = d3
-		.scaleLinear()
-		.domain(
-			d3.extent(altcoin, function (d) {
+	var dates = Array.from(
+		altcoin
+			.map(function (d) {
 				return d.date;
 			})
-		)
+			.keys()
+	).sort(d3.ascending);
+	var duration = dates.length;
+	console.log(dates);
+
+	// Add X axis
+	var x = d3
+		.scaleTime()
+		.domain(d3.extend(dates))
 		.range([0, width - marginLeft - marginRight]);
 	svg
 		.append("g")
 		.attr("transform", `translate(${marginLeft}, ${height - marginBottom})`)
-		.call(d3.axisBottom(x).ticks(5));
+		.call(d3.axisBottom(x));
 
 	// Add Y axis
 	var y = d3
@@ -49,21 +50,4 @@ function streamGraph(altcoin) {
 		.append("g")
 		.attr("transform", `translate(${marginLeft}, ${marginBottom})`)
 		.call(d3.axisLeft(y));
-
-	// color palette
-	var color = d3.scaleOrdinal().domain(keys).range(d3.schemecategory10);
-
-	var stackedData = d3.stack().offset(d3.stackOffsetSilhouette).keys(keys);
-
-	var area = d3
-		.area()
-		.x(function (d) {
-			return x(d.altcoin.date);
-		})
-		.y0(function (d) {
-			return y(d[0]);
-		})
-		.y1(function (d) {
-			return y(d[1]);
-		});
 }
