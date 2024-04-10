@@ -59,6 +59,10 @@ hr {
 	text-align: justify;
 }
 
+b {
+	font-weight: bold;
+}
+
 /* Navigation Bar Styles */
 header {
 	box-shadow: 0 0 15px 5px rgba(var(--primary-color), 0.5);
@@ -136,7 +140,7 @@ footer {
 }
 
 .reference-notes {
-	font-size: 11px;
+	font-size: 12px;
 	font-style: italic;
 	text-align: center;
 }
