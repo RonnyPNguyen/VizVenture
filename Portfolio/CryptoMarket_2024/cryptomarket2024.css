@@ -1,1 +1,7 @@
 @import url(../../Resource/stylesheet/masterStyles.css);
+
+@media (max-width: 1000px) {
+	#stream-grapg svg {
+		height: 400px;
+	}
+}

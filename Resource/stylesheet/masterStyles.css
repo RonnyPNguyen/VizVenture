@@ -45,15 +45,16 @@ hr {
 }
 
 .sub-heading {
-	font-size: 14px;
+	font-size: 16px;
 	color: rgb(70, 70, 70);
 	font-style: italic;
 	text-align: center;
 	padding: 0 100px;
+	line-height: 2;
 }
 
 .copy-content {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 2;
 	padding: 0 100px;
 	text-align: justify;
@@ -96,6 +97,7 @@ footer {
 .nav-logo img {
 	height: 30px;
 	display: block;
+	padding: 0 20px;
 }
 
 .nav-links {
@@ -203,5 +205,42 @@ footer {
 	}
 	.copy-content {
 		padding: 0 0.3vw;
+	}
+	.sub-heading {
+		padding: 0 20px;
+	}
+	.nav-bar nav {
+		justify-content: space-around;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+	}
+	.nav-links li {
+		margin: 0;
+		padding: 0;
+	}
+	.nav-bar ul {
+		width: 100vw;
+		display: flex;
+		justify-content: space-around;
+		margin: 0;
+	}
+	.nav-links a {
+		font-size: 14px;
+	}
+	.nav-logo img {
+		height: 25px;
+	}
+
+	.footer-container {
+		padding: 0 10px;
+	}
+	.footer-container a {
+		font-size: 10px;
+		padding: 0 10px;
+	}
+	.footer-container p {
+		font-size: 12px;
+		padding: 0 10px;
 	}
 }

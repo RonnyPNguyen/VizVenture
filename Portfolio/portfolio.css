@@ -32,8 +32,8 @@
 	object-fit: contain;
 }
 .image-container a p {
-	margin: 8px 0;
-	font-size: 12px;
+	margin: 14px 0;
+	font-size: 14px;
 }
 
 .image-container:hover {
