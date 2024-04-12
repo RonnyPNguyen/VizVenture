@@ -27,17 +27,28 @@
 	text-align: center;
 }
 .image-container a img {
-	height: 100%;
-	width: 100%;
-	object-fit: contain;
+	margin: 5%;
+	height: 80%;
+	transition: 0.3s;
+}
+.image-container a img:hover {
+	margin: 0;
+	height: 90%;
 }
 .image-container a p {
-	margin: 14px 0;
-	font-size: 14px;
+	height: 10%;
+	margin: auto;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+}
+.image-container a p:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .image-container:hover {
-	box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px 5px rgba(var(--primary-color), 0.5);
 }
 
 @media (max-width: 1000px) {

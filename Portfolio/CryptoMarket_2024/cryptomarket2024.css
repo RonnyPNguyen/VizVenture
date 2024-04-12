@@ -1,5 +1,9 @@
 @import url(../../Resource/stylesheet/masterStyles.css);
 
+#coin-icon img {
+	height: 16px;
+}
+
 @media (max-width: 1000px) {
 	#stream-grapg svg {
 		height: 400px;
