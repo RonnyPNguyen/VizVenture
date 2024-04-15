@@ -1,0 +1,89 @@
+
+  {
+    "Cash management trusts":-2.3882552634,
+    "Period":"Q1_2022",
+    "Total Managed Funds assets":-1.3226305768,
+    "Life insurance corporations":-1.4934514275,
+    "Superannuation (pension) funds":-1.0440283891,
+    "Public offer (retail) unit trusts":-3.2802603596,
+    "Friendly societies":-2.4875621891,
+    "Common funds":0.4632462197
+  }
+
+  {
+    "Cash management trusts":-14.1370999725,
+    "Period":"Q2_2022",
+    "Total Managed Funds assets":-4.169497554,
+    "Life insurance corporations":-4.5729908971,
+    "Superannuation (pension) funds":-4.4134487556,
+    "Public offer (retail) unit trusts":-1.4835130042,
+    "Friendly societies":-3.8265306122,
+    "Common funds":-5.1418131199
+  }
+
+  {
+    "Cash management trusts":-6.6796944395,
+    "Period":"Q3_2022",
+    "Total Managed Funds assets":0.2025857043,
+    "Life insurance corporations":-1.0399525548,
+    "Superannuation (pension) funds":0.2782205127,
+    "Public offer (retail) unit trusts":0.3690380408,
+    "Friendly societies":0.5535693692,
+    "Common funds":1.4858295882
+  }
+
+  {
+    "Cash management trusts":-3.8301922711,
+    "Period":"Q4_2022",
+    "Total Managed Funds assets":2.7459928072,
+    "Life insurance corporations":0.3924978054,
+    "Superannuation (pension) funds":2.929872819,
+    "Public offer (retail) unit trusts":2.4494410805,
+    "Friendly societies":2.6723248079,
+    "Common funds":0.5964753728
+  }
+
+  {
+    "Cash management trusts":3.9946157805,
+    "Period":"Q1_2023",
+    "Total Managed Funds assets":3.2874254592,
+    "Life insurance corporations":2.075888916,
+    "Superannuation (pension) funds":3.5313007714,
+    "Public offer (retail) unit trusts":1.7640592331,
+    "Friendly societies":2.6809651475,
+    "Common funds":3.7642619711
+  }
+
+  {
+    "Cash management trusts":-2.1661336988,
+    "Period":"Q2_2023",
+    "Total Managed Funds assets":1.9685383381,
+    "Life insurance corporations":-0.8945192165,
+    "Superannuation (pension) funds":2.1747508469,
+    "Public offer (retail) unit trusts":1.3704317178,
+    "Friendly societies":3.1222802437,
+    "Common funds":1.8528138528
+  }
+
+  {
+    "Cash management trusts":-0.4046850072,
+    "Period":"Q3_2023",
+    "Total Managed Funds assets":0.3709406939,
+    "Life insurance corporations":-0.3715093085,
+    "Superannuation (pension) funds":0.706498653,
+    "Public offer (retail) unit trusts":-1.9967236682,
+    "Friendly societies":0.4641839857,
+    "Common funds":2.8306698402
+  }
+
+  {
+    "Cash management trusts":-0.4532135183,
+    "Period":"Q4_2023",
+    "Total Managed Funds assets":4.1311589218,
+    "Life insurance corporations":1.0619572381,
+    "Superannuation (pension) funds":4.3482155738,
+    "Public offer (retail) unit trusts":3.4814552649,
+    "Friendly societies":5.1664391473,
+    "Common funds":3.3231379681
+  }
+
