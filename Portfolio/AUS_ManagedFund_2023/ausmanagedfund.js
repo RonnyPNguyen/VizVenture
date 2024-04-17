@@ -35,7 +35,7 @@ var lineChart = function (institutionGrowth) {
 	var width = svgDimension.width,
 		height = 600;
 	svg.attr("height", height);
-	var marginTop = 60,
+	var marginTop = 30,
 		marginBottom = 30,
 		marginLeft = 60,
 		marginRight = 60;
@@ -64,11 +64,11 @@ var lineChart = function (institutionGrowth) {
 	svg
 		.append("g")
 		.attr("class", "y-axis")
-		.attr("transform", `translate(${marginLeft - 10}, 0)`)
+		.attr("transform", `translate(${width - marginRight}, 0)`)
 		.call(
 			d3
-				.axisLeft(y)
-				.tickSizeInner(-(width - marginLeft - marginRight + 20))
+				.axisRight(y)
+				.tickSizeInner(-(width - marginLeft - marginRight))
 				.tickSizeOuter(10)
 				.tickPadding(10)
 		)
@@ -82,7 +82,7 @@ var lineChart = function (institutionGrowth) {
 	svg
 		.append("line")
 		.attr("class", "zero-line")
-		.attr("stroke-width", 2)
+		.attr("stroke-width", 3)
 		.attr("fill", "#000000")
 		.attr("x1", marginLeft)
 		.attr("x2", width - marginRight)
@@ -112,7 +112,7 @@ var lineChart = function (institutionGrowth) {
 		.attr("stroke", function (d) {
 			return color(d[0]);
 		})
-		.attr("stroke-width", 2)
+		.attr("stroke-width", 3)
 		.attr("d", function (d) {
 			return d3
 				.line()
@@ -128,13 +128,44 @@ var lineChart = function (institutionGrowth) {
 	var mouseleave = function (event, d) {
 		d3.selectAll(".trend-lines").style("opacity", 1);
 	};
-	var lengend = svg
-		.append("rect")
+
+	// Add legend
+	var legend = svg
+		.append("g")
 		.attr("class", "legend")
-		.attr("x", marginLeft)
-		.attr("y", marginTop / 2)
-		.attr("width", width - marginRight - marginLeft)
-		.attr("height", 40);
+		.attr("transform", `translate(${marginLeft}, ${marginTop * 1.5 - 5})`);
+
+	var legendData = Array.from(sumStat.keys());
+
+	var legendItem = legend
+		.selectAll(".legend-item")
+		.data(legendData)
+		.enter()
+		.append("g")
+		.attr("class", "legend-item")
+		.attr("transform", function (d, i) {
+			return `translate(0, ${i * 35})`;
+		});
+
+	legendItem
+		.append("circle")
+		.attr("cx", 5)
+		.attr("cy", 5)
+		.attr("r", 10)
+		.attr("fill", function (d) {
+			return color(d);
+		});
+
+	legendItem
+		.append("text")
+		.attr("x", 20)
+		.attr("y", 5)
+		.attr("dy", "0.35em")
+		.text(function (d) {
+			return d;
+		})
+		.attr("font-size", "12px");
+
 	svg
 		.selectAll(".trend-lines")
 		.on("mouseover", mouseover)
