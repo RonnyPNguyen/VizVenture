@@ -44,7 +44,11 @@ var lineChart = function (institutionGrowth) {
 		...new Set(Array.from(institutionGrowth.map((d) => d.Period))),
 	];
 	var sumStat = d3.group(institutionGrowth, (d) => d.Institution);
-	console.log(sumStat);
+	var legendData = Array.from(sumStat).map((d) => [
+		d[0],
+		d[1].map((item) => item.identifier)[0],
+	]);
+	console.log(legendData);
 	// Create scales
 	var x = d3
 		.scalePoint()
@@ -71,9 +75,13 @@ var lineChart = function (institutionGrowth) {
 				.tickSizeInner(-(width - marginLeft - marginRight))
 				.tickSizeOuter(10)
 				.tickPadding(10)
+				.tickFormat((d) => d + "%")
 		)
-		.select(".domain")
-		.remove();
+		.selectAll(".tick text") // Select all the tick text elements
+		.style("text-anchor", "end") // Right-align the text by anchoring it to the end
+		.attr("dx", "2em") // Adjust horizontal position relative to the tick
+		.attr("dy", "0.32em"); // Adjust vertical position for vertical centering
+	svg.select(".y-axis").select(".domain").remove();
 	svg
 		.select(".y-axis")
 		.attr("font-size", "12px")
@@ -108,6 +116,9 @@ var lineChart = function (institutionGrowth) {
 		.data(sumStat)
 		.join("path")
 		.attr("class", "trend-lines")
+		.attr("id", function (d) {
+			return d[1].map((item) => item.identifier)[0] + "-line";
+		})
 		.attr("fill", "none")
 		.attr("stroke", function (d) {
 			return color(d[0]);
@@ -120,22 +131,11 @@ var lineChart = function (institutionGrowth) {
 				.y((d) => y(+d.Rate))(d[1]);
 		});
 
-	var mouseover = function (event, d) {
-		d3.selectAll(".trend-lines").style("opacity", 0.0);
-		d3.select(this).style("opacity", 1);
-	};
-	var mousemove = function (event, d) {};
-	var mouseleave = function (event, d) {
-		d3.selectAll(".trend-lines").style("opacity", 1);
-	};
-
 	// Add legend
 	var legend = svg
 		.append("g")
 		.attr("class", "legend")
 		.attr("transform", `translate(${marginLeft}, ${marginTop * 1.5 - 5})`);
-
-	var legendData = Array.from(sumStat.keys());
 
 	var legendItem = legend
 		.selectAll(".legend-item")
@@ -145,15 +145,17 @@ var lineChart = function (institutionGrowth) {
 		.attr("class", "legend-item")
 		.attr("transform", function (d, i) {
 			return `translate(0, ${i * 35})`;
+		})
+		.attr("id", function (d) {
+			return `${d[1]}-legend`;
 		});
-
 	legendItem
 		.append("circle")
 		.attr("cx", 5)
 		.attr("cy", 5)
 		.attr("r", 10)
 		.attr("fill", function (d) {
-			return color(d);
+			return color(d[0]);
 		});
 
 	legendItem
@@ -162,14 +164,35 @@ var lineChart = function (institutionGrowth) {
 		.attr("y", 5)
 		.attr("dy", "0.35em")
 		.text(function (d) {
-			return d;
+			return d[0];
 		})
 		.attr("font-size", "12px");
-
+	var mouseover = function (event, d) {
+		d3.selectAll(".trend-lines").style("opacity", 0.2);
+		d3.selectAll(".legend-item").style("opacity", 0.2);
+		let identifyKeys = d[1].map((item) => item.identifier)[0];
+		svg.select(`#${identifyKeys}-legend`).style("opacity", 1);
+		d3.select(this).style("opacity", 1);
+	};
+	var mouseoverLegend = function (event, d) {
+		d3.selectAll(".trend-lines").style("opacity", 0.2);
+		d3.selectAll(".legend-item").style("opacity", 0.2);
+		d3.select(this).style("opacity", 1);
+		svg.select(`#${d[1]}-line`).style("opacity", 1);
+	};
+	var mousemove = function (event, d) {};
+	var mouseleave = function (event, d) {
+		d3.selectAll(".trend-lines").style("opacity", 1);
+		d3.selectAll(".legend-item").style("opacity", 1);
+	};
 	svg
 		.selectAll(".trend-lines")
 		.on("mouseover", mouseover)
-		.on("mousemove", mousemove)
+		.on("mouseleave", mouseleave);
+
+	svg
+		.selectAll(".legend-item")
+		.on("mouseover", mouseoverLegend)
 		.on("mouseleave", mouseleave);
 };
 
