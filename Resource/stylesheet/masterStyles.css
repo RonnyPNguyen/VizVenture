@@ -47,7 +47,7 @@ body {
 	line-height: 1.5;
 }
 .bg h3 {
-	font-size: 16px;
+	font-size: 18px;
 	text-align: center;
 	margin: 2px 0;
 }
@@ -60,19 +60,24 @@ body {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 hr {
 	margin: 0;
 	border: 1px solid rgba(var(--primary-color), 0.6);
 }
 
 .copy-content {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 2;
 	padding: 0 100px;
 	text-align: justify;
 }
 .copy-heading {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 2;
 	padding: 0 100px;
 	text-align: justify;
@@ -132,7 +137,7 @@ footer {
 .nav-links a {
 	text-decoration: none;
 	color: black;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .nav-links a:hover {
