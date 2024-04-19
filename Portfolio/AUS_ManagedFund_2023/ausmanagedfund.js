@@ -1,5 +1,7 @@
 var industrySource = d3.csv("data/df1_pct_sort.csv");
 var institutionGrowth = d3.csv("data/df2_growth_pct.csv");
+var scrollPos = 0;
+var periodSelector = "2023Q4";
 
 industrySource
 	.then((promiseData) => {
@@ -17,16 +19,187 @@ institutionGrowth
 		console.error("Error loading data:", err);
 	});
 
+// Add a period selector
+var dropdown = document.getElementById("period-selector");
+dropdown.addEventListener("change", function () {
+	scrollPos = window.scrollY;
+	d3.select("#pie-chart svg").remove();
+	periodSelector = dropdown.value;
+	industrySource
+		.then((promiseData) => {
+			pieChart(promiseData);
+		})
+		.catch((err) => {
+			console.error("Error loading data:", err);
+		});
+});
+
 var pieChart = function (industrySource) {
 	var svg = d3.select("#pie-chart").append("svg").attr("width", "100%");
 	var svgDimension = svg.node().getBoundingClientRect();
 	var width = svgDimension.width,
 		height = 600;
 	svg.attr("height", height);
-	var marginTop = 80,
-		marginBottom = 80,
-		marginLeft = 50,
-		marginRight = 50;
+	var pie_chart = svg
+		.append("g")
+		.attr("transform", `translate(${width / 2},${height / 2})`);
+
+	// unload data
+	var insKey = [
+		"Overseas assets",
+		"Units in trusts",
+		"Shares",
+		"Land, buildings and equipment",
+		"Deposits",
+		"Others",
+	];
+
+	var sumStat = d3
+		.group(industrySource, (d) => d.Period)
+		.get(periodSelector)
+		.map((d) => d["Total Assets"]);
+	console.log(sumStat);
+	var period_data = d3
+		.group(industrySource, (d) => d.Period)
+		.get(periodSelector)
+		.map((d) => {
+			let result = {};
+			insKey.forEach((key) => {
+				result[key] = d[key];
+			});
+			return result;
+		});
+	const color = d3
+		.scaleOrdinal()
+		.domain(insKey)
+		.range([
+			"#E76F51",
+			"#F4A261",
+			"#E9C46A",
+			"#8AB17D",
+			"#2A9D8F",
+			"#287271",
+			"#264653",
+		]);
+
+	// Compute the position of each group on the pie:
+	const pie = d3
+		.pie()
+		.sort((a, b) => b[1] - a[1])
+		.value((d) => d[1]);
+	const pie_data = pie(Object.entries(period_data[0]));
+	// The arc generator
+	var radius = Math.min(height, width) / 2 - 0;
+	const arc = d3
+		.arc()
+		.innerRadius(radius * 0.5) // This is the size of the donut hole
+		.outerRadius(radius * 0.8);
+	const outerArc = d3
+		.arc()
+		.innerRadius(radius * 0.9)
+		.outerRadius(radius * 0.9);
+
+	function wrapText(text, width) {
+		text.each(function () {
+			let textElement = d3.select(this),
+				words = textElement.text().split(/\s+/).reverse(),
+				word,
+				line = [],
+				lineNumber = 0,
+				lineHeight = 1.1, // ems
+				y = textElement.attr("y"),
+				dy = 0,
+				tspan = textElement
+					.text(null)
+					.append("tspan")
+					.attr("x", 0)
+					.attr("y", y)
+					.attr("dy", `${dy}em`);
+
+			while ((word = words.pop())) {
+				line.push(word);
+				tspan.text(line.join(" "));
+				if (tspan.node().getComputedTextLength() > width) {
+					line.pop(); // Remove the word that goes beyond the width
+					tspan.text(line.join(" ")); // Set the text without the last word
+					line = [word]; // Start a new line with the last word
+					tspan = textElement
+						.append("tspan")
+						.attr("x", 0)
+						.attr("y", 20)
+						.attr("dy", 0)
+						.text(word);
+				}
+			}
+		});
+	}
+
+	// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+	pie_chart
+		.append("text")
+		.attr("text-anchor", "middle")
+		.attr("font-size", "20px")
+		.each(function (d) {
+			const text = d3.select(this);
+			// First line of text
+			text
+				.append("tspan")
+				.attr("x", 0) // Align with the text element's position
+				.attr("y", "-0.25em") // Position slightly above the vertical center
+				.text("Total consolidated assets");
+
+			// Second line of text
+			text
+				.append("tspan")
+				.attr("x", 0) // Align with the text element's position
+				.attr("y", "0.25em") // Position slightly below the first line
+				.attr("dy", "1em") // Additional adjustment to line height
+				.text(`AUD ${d3.format(",")(d3.sum(sumStat))}b`);
+		});
+	pie_chart
+		.selectAll("allSlices")
+		.data(pie_data)
+		.join("path")
+		.attr("d", arc)
+		.attr("fill", (d) => color(d.data[0]))
+		.attr("stroke", "white")
+		.style("stroke-width", "2px")
+		.style("opacity", 0.7);
+
+	// Add the polylines between chart and labels:
+	pie_chart
+		.selectAll("allPolylines")
+		.data(pie_data)
+		.join("polyline")
+		.attr("stroke", "black")
+		.style("fill", "none")
+		.attr("stroke-width", 1)
+		.attr("points", function (d) {
+			const posA = arc.centroid(d); // line insertion in the slice
+			const posB = outerArc.centroid(d); // line break: we use the other arc generator that has been built only for that
+			const posC = outerArc.centroid(d); // Label position = almost the same as posB
+			const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2; // we need the angle to see if the X position will be at the extreme right or extreme left
+			posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
+			return [posA, posB, posC];
+		});
+
+	// Add the polylines between chart and labels:
+	pie_chart
+		.selectAll("allLabels")
+		.data(pie_data)
+		.join("text")
+		.text((d) => `${d.data[0]} ${d.data[1]}%`)
+		.attr("transform", function (d) {
+			const pos = outerArc.centroid(d);
+			const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
+			pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
+			return `translate(${pos})`;
+		})
+		.style("text-anchor", function (d) {
+			const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
+			return midangle < Math.PI ? "start" : "end";
+		})
+		.call(wrapText, 200);
 };
 
 var lineChart = function (institutionGrowth) {
@@ -48,13 +221,11 @@ var lineChart = function (institutionGrowth) {
 		d[0],
 		d[1].map((item) => item.identifier)[0],
 	]);
-	console.log(legendData);
 	// Create scales
 	var x = d3
 		.scalePoint()
 		.domain(period)
 		.range([marginLeft, width - marginRight]);
-
 	svg
 		.append("g")
 		.attr("transform", `translate(0, ${height - marginBottom})`)
@@ -101,14 +272,13 @@ var lineChart = function (institutionGrowth) {
 	const color = d3
 		.scaleOrdinal()
 		.range([
-			"#e41a1c",
-			"#377eb8",
-			"#4daf4a",
-			"#984ea3",
-			"#ff7f00",
-			"#ffff33",
-			"#a65628",
-			"#f781bf",
+			"#E76F51",
+			"#F4A261",
+			"#E9C46A",
+			"#8AB17D",
+			"#2A9D8F",
+			"#287271",
+			"#264653",
 		]);
 
 	svg
@@ -218,86 +388,3 @@ window.addEventListener("resize", function () {
 		window.scrollTo(0, scrollPos);
 	});
 });
-
-// // set the dimensions and margins of the graph
-// const margin = { top: 10, right: 30, bottom: 30, left: 60 },
-// 	width = 460 - margin.left - margin.right,
-// 	height = 400 - margin.top - margin.bottom;
-
-// // append the svg object to the body of the page
-// const svg = d3
-// 	.select("#my_dataviz")
-// 	.append("svg")
-// 	.attr("width", width + margin.left + margin.right)
-// 	.attr("height", height + margin.top + margin.bottom)
-// 	.append("g")
-// 	.attr("transform", `translate(${margin.left},${margin.top})`);
-
-// //Read the data
-// d3.csv(
-// 	"https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered.csv"
-// ).then(function (data) {
-// 	// group the data: I want to draw one line per group
-// 	const sumstat = d3.group(data, (d) => d.name); // nest function allows to group the calculation per level of a factor
-// 	console.log(sumstat);
-// 	// Add X axis --> it is a date format
-// 	const x = d3
-// 		.scaleLinear()
-// 		.domain(
-// 			d3.extent(data, function (d) {
-// 				return d.year;
-// 			})
-// 		)
-// 		.range([0, width]);
-// 	svg
-// 		.append("g")
-// 		.attr("transform", `translate(0, ${height})`)
-// 		.call(d3.axisBottom(x).ticks(5));
-
-// 	// Add Y axis
-// 	const y = d3
-// 		.scaleLinear()
-// 		.domain([
-// 			0,
-// 			d3.max(data, function (d) {
-// 				return +d.n;
-// 			}),
-// 		])
-// 		.range([height, 0]);
-// 	svg.append("g").call(d3.axisLeft(y));
-
-// 	// color palette
-// 	const color = d3
-// 		.scaleOrdinal()
-// 		.range([
-// 			"#e41a1c",
-// 			"#377eb8",
-// 			"#4daf4a",
-// 			"#984ea3",
-// 			"#ff7f00",
-// 			"#ffff33",
-// 			"#a65628",
-// 			"#f781bf",
-// 			"#999999",
-// 		]);
-// 	// Draw the line
-// 	svg
-// 		.selectAll(".line")
-// 		.data(sumstat)
-// 		.join("path")
-// 		.attr("fill", "none")
-// 		.attr("stroke", function (d) {
-// 			return color(d[0]);
-// 		})
-// 		.attr("stroke-width", 1.5)
-// 		.attr("d", function (d) {
-// 			return d3
-// 				.line()
-// 				.x(function (d) {
-// 					return x(d.year);
-// 				})
-// 				.y(function (d) {
-// 					return y(+d.n);
-// 				})(d[1]);
-// 		});
-// });
