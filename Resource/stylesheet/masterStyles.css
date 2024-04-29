@@ -221,11 +221,12 @@ footer {
 	width: 150px;
 	background-color: rgba(var(--primary-color), 0);
 	border: 3px solid rgba(var(--primary-color), 0.8);
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 .back-button:hover {
-	background-color: rgba(var(--primary-color), 0.4);
+	background-color: rgba(var(--primary-color), 1);
+	color: white;
 }
 
 /* Small screen configuration */
