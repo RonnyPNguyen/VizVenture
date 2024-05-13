@@ -15,7 +15,6 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-color: rgba(214, 234, 223, 0.2);
 }
 
 .image-container {
@@ -164,17 +163,17 @@ footer {
 .nav-icons {
 	width: 200px;
 	height: 50px;
-	margin: 0 auto;
+	margin: auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
-.nav-icons i {
+.nav-icons a {
 	align-content: center;
-	font-size: 35px;
+	font-size: 40px;
 	color: black;
-	transition: 0.3s;
+	transition: 0.2s;
 }
-.nav-icons i:hover {
+.nav-icons a:hover {
 	font-size: 50px;
 	color: rgba(var(--primary-color), 1);
 }
@@ -229,6 +228,19 @@ footer {
 	color: white;
 }
 
+.forward-button {
+	height: 40px;
+	width: 250px;
+	font-size: 16px;
+	background-color: rgba(var(--primary-color), 0);
+	border: 3px solid rgba(var(--primary-color), 0.8);
+	transition: 0.3s;
+}
+
+.forward-button:hover {
+	background-color: rgba(var(--primary-color), 1);
+	color: white;
+}
 /* Small screen configuration */
 @media (max-width: 1000px) {
 	.bg {
@@ -274,4 +286,8 @@ footer {
 		font-size: 12px;
 		padding: 0 10px;
 	}
+}
+
+i {
+	font-style: italic;
 }
