@@ -3,9 +3,9 @@
 	/* Define colors using custom properties */
 	--primary-color: 3, 102, 102;
 	--background-color: 245, 245, 245;
+	--accent-color: 221, 234, 243;
 	--text-color: black;
 }
-
 * {
 	font-family: "Merriweather", sans-serif;
 	font-weight: 400;
@@ -18,13 +18,14 @@ body {
 }
 
 .image-container {
-	background-color: rgba(214, 234, 223, 0.4);
-	box-shadow: 0 0 10px 5px rgba(214, 234, 223, 1);
+	background-color: rgba(var(--primary-color), 0.2);
+	border-radius: 10px;
 }
 
 .graphic-container {
-	background-color: rgba(214, 234, 223, 0.4);
-	box-shadow: 0 0 10px 5px rgba(214, 234, 223, 1);
+	background-color: rgba(var(--primary-color), 0.2);
+	border-radius: 10px;
+	box-shadow: 0 0 10px 8px rgba(var(--primary-color), 0.5);
 }
 
 .bg {
@@ -85,7 +86,7 @@ hr {
 
 /* Navigation Bar Styles */
 header {
-	box-shadow: 0 0 15px 5px rgba(var(--primary-color), 0.5);
+	box-shadow: 0 0 15px 5px rgba(var(--primary-color), 0.8);
 	z-index: 1;
 }
 
@@ -97,7 +98,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 0 0 15px 5px rgba(var(--primary-color), 0.5);
+	box-shadow: 0 0 15px 5px rgba(var(--primary-color), 0.8);
 }
 
 .nav-bar {

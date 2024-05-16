@@ -18,7 +18,6 @@ function ridgeLine(airquality) {
 			return { name, values: months.map((d) => value.get(d)) };
 		});
 
-	// Set up color
 	var countries = [...new Set(airquality.map((d) => d.Country))];
 	var allMeans = [];
 	for (let c in countries) {
@@ -37,11 +36,11 @@ function ridgeLine(airquality) {
 	const normalizedMeans = allMeans.map((mean) => {
 		return ((mean - minMean) / (maxMean - minMean)) * 100;
 	});
-
+	// Set up color
 	var color = d3
 		.scaleSequential()
 		.domain([0, 100])
-		.interpolator(d3.interpolateCool);
+		.interpolator(d3.interpolatePlasma);
 
 	var marginTop = 30,
 		marginBottom = 30,
@@ -91,13 +90,13 @@ function ridgeLine(airquality) {
 	svg
 		.append("g")
 		.attr("transform", `translate(0,${height - marginBottom})`)
-		.call(d3.axisBottom(x).ticks(12).tickSizeOuter(0).tickPadding(5))
+		.call(d3.axisBottom(x).tickSizeOuter(0).tickPadding(5))
 		.call((g) => g.select(".domain").remove());
 	// y-axis
 	svg
 		.append("g")
 		.attr("transform", `translate(${marginLeft},0)`)
-		.call(d3.axisLeft(y).tickSize(0).tickPadding(4))
+		.call(d3.axisLeft(y).tickSize(0).tickPadding(12))
 		.call((g) => g.select(".domain").remove());
 
 	// Append a layer for each series.
@@ -162,10 +161,6 @@ function ridgeLine(airquality) {
 		});
 
 	// Append color legend
-	var color = d3
-		.scaleSequential()
-		.domain([0, 100])
-		.interpolator(d3.interpolateCool);
 	const legend = svg
 		.append("g")
 		.attr("class", "legend")
@@ -186,14 +181,50 @@ function ridgeLine(airquality) {
 		.attr("stop-color", color(0));
 	linearGradient
 		.append("stop")
+		.attr("offset", "10%")
+		.attr("stop-color", color(10));
+	linearGradient
+		.append("stop")
+		.attr("offset", "20%")
+		.attr("stop-color", color(20));
+	linearGradient
+		.append("stop")
+		.attr("offset", "30%")
+		.attr("stop-color", color(30));
+	linearGradient
+		.append("stop")
+		.attr("offset", "40%")
+		.attr("stop-color", color(40));
+	linearGradient
+		.append("stop")
+		.attr("offset", "50%")
+		.attr("stop-color", color(50));
+	linearGradient
+		.append("stop")
+		.attr("offset", "60%")
+		.attr("stop-color", color(60));
+	linearGradient
+		.append("stop")
+		.attr("offset", "70%")
+		.attr("stop-color", color(70));
+	linearGradient
+		.append("stop")
+		.attr("offset", "80%")
+		.attr("stop-color", color(80));
+	linearGradient
+		.append("stop")
+		.attr("offset", "90%")
+		.attr("stop-color", color(90));
+	linearGradient
+		.append("stop")
 		.attr("offset", "100%")
 		.attr("stop-color", color(100));
 
 	// Append color legend rectangle
 	legend
 		.append("rect")
-		.attr("rx", 2) // horizontal radius
-		.attr("ry", 2) // vertical radius
+		.attr("rx", 0) // horizontal radius
+		.attr("ry", 0) // vertical radius
 		.attr("width", marginRight / 4)
 		.attr("height", height - marginBottom - cell)
 		.attr("fill", "url(#color-gradient)");
