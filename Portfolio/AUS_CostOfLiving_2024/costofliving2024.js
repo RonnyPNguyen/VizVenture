@@ -34,9 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	});
-	// Remove svg
-	// if button ranking is clicked, input2 is used
-	// if button index is clicked, input3 is used
 });
 
 var lineChart = function (data) {
