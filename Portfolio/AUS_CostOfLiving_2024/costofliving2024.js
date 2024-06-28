@@ -1,4 +1,4 @@
-var input1 = d3.csv("data/cpiByGroup.csv");
+var input1 = d3.csv("data/cpiBygroup.csv");
 var input2 = d3.csv("data/cliRanking.csv");
 var input3 = d3.csv("data/cliIndex.csv");
 
