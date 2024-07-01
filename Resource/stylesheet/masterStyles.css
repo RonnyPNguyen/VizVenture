@@ -84,6 +84,23 @@ hr {
 	font-weight: bold;
 }
 
+.author-signage {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 0 100px;
+	text-align: justify;
+	text-align: right;
+}
+
+.author-signage p1 {
+	color: rgba(var(--primary-color), 1);
+	font-weight: bold;
+}
+
+.author-signage p2 {
+	font-style: italic;
+}
 /* Navigation Bar Styles */
 header {
 	box-shadow: 0 0 15px 5px rgba(var(--primary-color), 0.8);
