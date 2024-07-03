@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3Y42HX43QM"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-3Y42HX43QM");
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Australian Energy Statistics</title>
+
+		<!-- D3.js API -->
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+
+		<!-- Font API -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Style Sheet -->
+		<link rel="stylesheet" href="ausenergystat.css" />
+		<link rel="stylesheet" href="../../Resource/stylesheet/masterStyles.css" />
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header class="nav-bar">
+			<nav>
+				<a class="nav-logo" href="../../index.html">
+					<img class="logo-icon" src="../../Resource/images/logo-icon.png" />
+				</a>
+				<ul class="nav-links">
+					<li><a href="../portfolio.html">Portfolio</a></li>
+					<li><a href="../../About/about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="bg">
+			<br />
+			<br />
+			<br />
+			<br />
+			<h1>Australia's Energy Landscape</h1>
+			<h4>(Latest of 2023)</h4>
+			<br />
+			<h2 class="sub-heading">
+				A break down of Australia's total electricity generation reveals a shift
+				toward renewable energy sources. While Australia's total electricity
+				generation held steady at 273,106 GWh, renewable contributed up to
+				95,963 GWh, accounting for 35% of all alternatives.
+			</h2>
+			<br />
+			<br />
+			<p class="copy-heading">
+				A new milestone: One-third of Australia's electricity now comes from
+				renewable sources
+			</p>
+			<br />
+			<div class="graphic-container" id="chart01">
+				<div class="button-selection" id="state-selector">
+					<button id="AUS-button">AUS</button>
+					<button id="NSW-button">NSW</button>
+					<button id="QLD-button">QLD</button>
+					<button id="VIC-button">VIC</button>
+					<button id="SA-button">SA</button>
+					<button id="WA-button">WA</button>
+					<button id="NT-button">NT</button>
+					<button id="TAS-button">TAS</button>
+				</div>
+			</div>
+			<h4>
+				<a
+					href="https://www.energy.gov.au/publications/australian-energy-statistics-table-o-electricity-generation-fuel-type-2022-23-and-2023"
+					><i
+						>Source: Department of Climate Change, Energy, the Environment and
+						Water</i
+					></a
+				>
+			</h4>
+			<br />
+			<p class="copy-content">
+				The Australian Energy Statistics 2023 report shows that renewable energy
+				has reached all-time highs contribution of 35% percentage, nearly 3%
+				more than 2022. This achievement reflects Australia's dedication to its
+				2030 emissions reduction targets. A key initiative driving this progress
+				is the establishment of the National Energy Transformation Partnership,
+				which aims to transform Australia's energy system to achieve net zero
+				emissions by 2050.
+			</p>
+			<p class="copy-content">
+				The state of New South Wales (NSW) also witnesses the same trend, with
+				35.6% of total electricity generation coming from renewable sources.
+				Additionally, NSW is also leading in overall sustainable energy
+				production, generating 25,453 GWh and contributing 25.5% to the national
+				total. Followed by Queensland (QLD) and Victoria (VIC), these two major
+				states both generated approximately 20,000 GWh of renewable energy.
+			</p>
+			<p class="copy-content">
+				In 2019, South Australia (SA) flipped the landscape to join Tasmania
+				(TAS) as the only two states that are majorly powered by renewable
+				energy. By 2023, SA and TAS are powered by sustainable sources at the
+				rates of 74.5% and 98.24%, respectively.
+			</p>
+			<br />
+			<p class="copy-heading">
+				Work in progress: Moving away from fossil fuels reliance
+			</p>
+			<br />
+			<div class="graphic-container" id="chart02">
+				<img src="data/ausenergy2023.png" alt="" />
+			</div>
+			<h4>
+				<a
+					href="https://www.energy.gov.au/publications/australian-energy-statistics-table-o-electricity-generation-fuel-type-2022-23-and-2023"
+					><i
+						>Source: Department of Climate Change, Energy, the Environment and
+						Water</i
+					></a
+				>
+			</h4>
+			<br />
+			<p class="copy-content">
+				Renewable energy sources have become increasingly diverse, encompassing
+				solar, wind, hydro, and biomass. The top three contributors are solar,
+				accounting for 16% of total energy generation, wind at 12%, and hydro at
+				6%. Solar remains the predominant source, making up almost half of all
+				sustainable options. Additionally, wind energy has shown consistent
+				growth, increasing by 16% annually over the last eight years.
+			</p>
+			<p class="copy-content">
+				However, the majority of Australia's electricity generation still rely
+				on fossil fuel sources including natural gas, oil products, brown coal
+				and black coal. These traditional sources contributed up to 177,142 GWh
+				(65 per cent) of total electricity generation in 2023, down 3 percentage
+				points on 2022. Black coal remains the largest contributor with 93,969
+				GWh, which mainly comes from Queensland and New South Wales.
+			</p>
+			<p class="copy-content"></p>
+			<br />
+			<br />
+			<div class="button-container">
+				<a href="../portfolio.html"
+					><button class="back-button">Back to Portfolio</button></a
+				>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<script src="ausenergystat.js"></script>
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="bg-light" id="my-footer">
+			<div class="footer-container" id="Copyright">
+				<p>Copyright by Viz Venture 2024</p>
+			</div>
+			<div class="footer-container" id="Policy">
+				<a href="../../About/about.html">by Ronny</a>
+				<a href="">NSW, Australia</a>
+			</div>
+		</footer>
+	</body>
+</html>

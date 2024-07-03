@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3Y42HX43QM"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-3Y42HX43QM");
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tea Trade 2020</title>
+
+		<!-- D3.js API -->
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.js"></script>
+
+		<!-- Font API -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Style Sheet -->
+		<link rel="stylesheet" href="teatrade2020.css" />
+		<link rel="stylesheet" href="../../Resource/stylesheet/masterStyles.css" />
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header class="nav-bar">
+			<nav>
+				<a class="nav-logo" href="../../index.html">
+					<img class="logo-icon" src="../../Resource/images/logo-icon.png" />
+				</a>
+				<ul class="nav-links">
+					<li><a href="../portfolio.html">Portfolio</a></li>
+					<li><a href="../../About/about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Snakey Chart Section -->
+		<section class="bg">
+			<br />
+			<br />
+			<br />
+			<br />
+			<h1>Global Tea Trade</h1>
+			<h4>(Latest of 2020)</h4>
+			<br />
+			<h2 class="sub-heading">
+				World tea production has increased at an average annual growth rate of
+				4.7 percent over the past decade to reach 6.2 million metric tons
+				million tonnes in 2020 and a projected market size of USD 73.13 billion
+				by 2027.
+			</h2>
+			<br />
+			<br />
+			<div class="graphic-container" id="sankey-viz"></div>
+			<h4>
+				<a href="https://resourcetrade.earth/"
+					><i>Source: Resource Trade Earth (2020)</i></a
+				>
+			</h4>
+			<br />
+			<br />
+			<p class="copy-content">
+				The tea industry plays a pivotal role in driving socio-economic
+				progress, serving as a significant source of employment and income for
+				millions of families, including those in developing countries. The chart
+				depicts the top 5 countries for both tea exporting and importing,
+				arranged in a left-to-right flow. Notably, small-scale farmers
+				contribute 60 percent to global tea production, with over 9 million of
+				them located in China, India, Kenya, and Sri Lanka.
+			</p>
+			<p class="copy-content">
+				Annually, global tea production generates approximately USD 18 billion,
+				while the total tea trade holds an estimated value of around USD 9.8
+				billion, constituting a substantial portion of export earnings. In
+				recent decades, the tea sector has experienced rapid expansion, driven
+				by a notable increase in global consumer demand, particularly in
+				emerging economies and low- and middle-income nations.
+			</p>
+			<p class="copy-content">
+				On the import side, there was a consistent upward trend in purchases
+				spanning until 2020. Pakistan, currently the top tea importing country
+				globally, experienced an annual increase of 5 percent. Likewise, Hong
+				Kong SAR has seen a rising trend in imports from mainland China, fueled
+				by expanding domestic demand and advantageous international trade
+				agreements. Meanwhile, import volumes in the United States, United
+				Kingdom, and Russia secured the 3rd, 4th, and 5th spots, respectively.
+			</p>
+			<br />
+			<br />
+			<div class="button-container">
+				<a href="../portfolio.html"
+					><button class="back-button">Back to Portfolio</button></a
+				>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<script src="teatrade2020.js"></script>
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="bg-light" id="my-footer">
+			<div class="footer-container" id="Copyright">
+				<p>Copyright by Viz Venture 2024</p>
+			</div>
+			<div class="footer-container" id="Policy">
+				<a href="../../About/about.html">by Ronny</a>
+				<a href="">NSW, Australia</a>
+			</div>
+		</footer>
+	</body>
+</html>
