@@ -1,2 +1,0 @@
-# VizVentue
-Data visualisation website
