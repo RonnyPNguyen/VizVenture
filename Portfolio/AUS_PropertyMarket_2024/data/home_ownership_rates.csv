@@ -1,0 +1,496 @@
+state,birth_year,age_group,ownership_rate,generation
+Australia,1947–1951,25–29,54.2,Baby Boomers
+Australia,1947–1951,30–34,68.0,Baby Boomers
+Australia,1947–1951,35–39,72.3,Baby Boomers
+Australia,1947–1951,40-44,75.1,Baby Boomers
+Australia,1947–1951,45-49,77.8,Baby Boomers
+Australia,1947–1951,50-54,79.6,Baby Boomers
+Australia,1947–1951,55-59,81.1,Baby Boomers
+Australia,1947–1951,60–64,81.3,Baby Boomers
+Australia,1947–1951,65–69,81.7,Baby Boomers
+Australia,1947–1951,70–74,81.9,Baby Boomers
+Australia,1952–1956,25–29,53.0,Baby Boomers
+Australia,1952–1956,30–34,64.8,Baby Boomers
+Australia,1952–1956,35–39,69.1,Baby Boomers
+Australia,1952–1956,40-44,73.3,Baby Boomers
+Australia,1952–1956,45-49,76.1,Baby Boomers
+Australia,1952–1956,50-54,78.3,Baby Boomers
+Australia,1952–1956,55-59,78.9,Baby Boomers
+Australia,1952–1956,60–64,79.4,Baby Boomers
+Australia,1952–1956,65–69,80.5,Baby Boomers
+Australia,1957–1961,25–29,51.1,Baby Boomers
+Australia,1957–1961,30–34,59.1,Baby Boomers
+Australia,1957–1961,35–39,67.2,Baby Boomers
+Australia,1957–1961,40-44,71.7,Baby Boomers
+Australia,1957–1961,45-49,75.0,Baby Boomers
+Australia,1957–1961,50-54,76.0,Baby Boomers
+Australia,1957–1961,55-59,76.8,Baby Boomers
+Australia,1957–1961,60–64,78.3,Baby Boomers
+Australia,1962–1966,25–29,46.3,Generation X
+Australia,1962–1966,30–34,58.6,Generation X
+Australia,1962–1966,35–39,66.0,Generation X
+Australia,1962–1966,40-44,70.7,Generation X
+Australia,1962–1966,45-49,72.3,Generation X
+Australia,1962–1966,50-54,73.7,Generation X
+Australia,1962–1966,55-59,75.5,Generation X
+Australia,1967–1971,25–29,43.5,Generation X
+Australia,1967–1971,30–34,57.3,Generation X
+Australia,1967–1971,35–39,65.2,Generation X
+Australia,1967–1971,40-44,67.6,Generation X
+Australia,1967–1971,45-49,69.8,Generation X
+Australia,1967–1971,50-54,72.4,Generation X
+Australia,1972–1976,25–29,43.2,Generation X
+Australia,1972–1976,30–34,57.1,Generation X
+Australia,1972–1976,35–39,62.1,Generation X
+Australia,1972–1976,40-44,65.3,Generation X
+Australia,1972–1976,45-49,69.1,Generation X
+Australia,1977–1981,25–29,43.4,Generation X
+Australia,1977–1981,30–34,53.5,Generation X
+Australia,1977–1981,35–39,58.9,Generation X
+Australia,1977–1981,40-44,64.9,Generation X
+Australia,1982–1986,25–29,41.3,Millennials
+Australia,1982–1986,30–34,50.0,Millennials
+Australia,1982–1986,35–39,59.2,Millennials
+Australia,1987–1991,25–29,37.4,Millennials
+Australia,1987–1991,30–34,49.7,Millennials
+Australia,1992–1996,25–29,36.1,Millennials
+New South Wales,1947–1951,25–29,50.6,Baby Boomers
+New South Wales,1947–1951,30–34,65.7,Baby Boomers
+New South Wales,1947–1951,35–39,69.9,Baby Boomers
+New South Wales,1947–1951,40-44,72.9,Baby Boomers
+New South Wales,1947–1951,45-49,76.0,Baby Boomers
+New South Wales,1947–1951,50-54,78.0,Baby Boomers
+New South Wales,1947–1951,55-59,79.7,Baby Boomers
+New South Wales,1947–1951,60–64,80.3,Baby Boomers
+New South Wales,1947–1951,65–69,80.9,Baby Boomers
+New South Wales,1947–1951,70–74,81.1,Baby Boomers
+New South Wales,1952–1956,25–29,49.9,Baby Boomers
+New South Wales,1952–1956,30–34,61.2,Baby Boomers
+New South Wales,1952–1956,35–39,65.8,Baby Boomers
+New South Wales,1952–1956,40-44,70.5,Baby Boomers
+New South Wales,1952–1956,45-49,73.8,Baby Boomers
+New South Wales,1952–1956,50-54,76.5,Baby Boomers
+New South Wales,1952–1956,55-59,77.6,Baby Boomers
+New South Wales,1952–1956,60–64,78.1,Baby Boomers
+New South Wales,1952–1956,65–69,79.1,Baby Boomers
+New South Wales,1957–1961,25–29,46.6,Baby Boomers
+New South Wales,1957–1961,30–34,55.1,Baby Boomers
+New South Wales,1957–1961,35–39,63.5,Baby Boomers
+New South Wales,1957–1961,40-44,68.7,Baby Boomers
+New South Wales,1957–1961,45-49,72.8,Baby Boomers
+New South Wales,1957–1961,50-54,74.5,Baby Boomers
+New South Wales,1957–1961,55-59,75.2,Baby Boomers
+New South Wales,1957–1961,60–64,76.5,Baby Boomers
+New South Wales,1962–1966,25–29,43.2,Generation X
+New South Wales,1962–1966,30–34,54.1,Generation X
+New South Wales,1962–1966,35–39,62.2,Generation X
+New South Wales,1962–1966,40-44,68.0,Generation X
+New South Wales,1962–1966,45-49,70.7,Generation X
+New South Wales,1962–1966,50-54,72.2,Generation X
+New South Wales,1962–1966,55-59,73.4,Generation X
+New South Wales,1967–1971,25–29,38.8,Generation X
+New South Wales,1967–1971,30–34,52.6,Generation X
+New South Wales,1967–1971,35–39,61.7,Generation X
+New South Wales,1967–1971,40-44,65.9,Generation X
+New South Wales,1967–1971,45-49,68.1,Generation X
+New South Wales,1967–1971,50-54,70.1,Generation X
+New South Wales,1972–1976,25–29,39.1,Generation X
+New South Wales,1972–1976,30–34,52.9,Generation X
+New South Wales,1972–1976,35–39,60.2,Generation X
+New South Wales,1972–1976,40-44,63.4,Generation X
+New South Wales,1972–1976,45-49,66.8,Generation X
+New South Wales,1977–1981,25–29,39.2,Generation X
+New South Wales,1977–1981,30–34,51.2,Generation X
+New South Wales,1977–1981,35–39,56.1,Generation X
+New South Wales,1977–1981,40-44,61.7,Generation X
+New South Wales,1982–1986,25–29,39.7,Millennials
+New South Wales,1982–1986,30–34,46.5,Millennials
+New South Wales,1982–1986,35–39,55.0,Millennials
+New South Wales,1987–1991,25–29,34.2,Millennials
+New South Wales,1987–1991,30–34,45.1,Millennials
+New South Wales,1992–1996,25–29,32.1,Millennials
+Victoria,1947–1951,25–29,58.1,Baby Boomers
+Victoria,1947–1951,30–34,71.9,Baby Boomers
+Victoria,1947–1951,35–39,77.2,Baby Boomers
+Victoria,1947–1951,40-44,79.3,Baby Boomers
+Victoria,1947–1951,45-49,81.5,Baby Boomers
+Victoria,1947–1951,50-54,83.5,Baby Boomers
+Victoria,1947–1951,55-59,84.4,Baby Boomers
+Victoria,1947–1951,60–64,84.2,Baby Boomers
+Victoria,1947–1951,65–69,84.0,Baby Boomers
+Victoria,1947–1951,70–74,84.5,Baby Boomers
+Victoria,1952–1956,25–29,56.4,Baby Boomers
+Victoria,1952–1956,30–34,70.3,Baby Boomers
+Victoria,1952–1956,35–39,74.0,Baby Boomers
+Victoria,1952–1956,40-44,77.7,Baby Boomers
+Victoria,1952–1956,45-49,80.5,Baby Boomers
+Victoria,1952–1956,50-54,82.0,Baby Boomers
+Victoria,1952–1956,55-59,82.3,Baby Boomers
+Victoria,1952–1956,60–64,82.1,Baby Boomers
+Victoria,1952–1956,65–69,83.1,Baby Boomers
+Victoria,1957–1961,25–29,56.3,Baby Boomers
+Victoria,1957–1961,30–34,64.2,Baby Boomers
+Victoria,1957–1961,35–39,72.2,Baby Boomers
+Victoria,1957–1961,40-44,76.9,Baby Boomers
+Victoria,1957–1961,45-49,79.2,Baby Boomers
+Victoria,1957–1961,50-54,79.9,Baby Boomers
+Victoria,1957–1961,55-59,80.1,Baby Boomers
+Victoria,1957–1961,60–64,81.2,Baby Boomers
+Victoria,1962–1966,25–29,50.8,Generation X
+Victoria,1962–1966,30–34,64.1,Generation X
+Victoria,1962–1966,35–39,71.9,Generation X
+Victoria,1962–1966,40-44,75.3,Generation X
+Victoria,1962–1966,45-49,76.5,Generation X
+Victoria,1962–1966,50-54,77.1,Generation X
+Victoria,1962–1966,55-59,78.5,Generation X
+Victoria,1967–1971,25–29,48.6,Generation X
+Victoria,1967–1971,30–34,62.8,Generation X
+Victoria,1967–1971,35–39,69.8,Generation X
+Victoria,1967–1971,40-44,71.8,Generation X
+Victoria,1967–1971,45-49,73.3,Generation X
+Victoria,1967–1971,50-54,75.3,Generation X
+Victoria,1972–1976,25–29,47.2,Generation X
+Victoria,1972–1976,30–34,60.9,Generation X
+Victoria,1972–1976,35–39,66.0,Generation X
+Victoria,1972–1976,40-44,68.5,Generation X
+Victoria,1972–1976,45-49,71.7,Generation X
+Victoria,1977–1981,25–29,44.9,Generation X
+Victoria,1977–1981,30–34,56.0,Generation X
+Victoria,1977–1981,35–39,61.7,Generation X
+Victoria,1977–1981,40-44,67.7,Generation X
+Victoria,1982–1986,25–29,41.9,Millennials
+Victoria,1982–1986,30–34,51.3,Millennials
+Victoria,1982–1986,35–39,62.1,Millennials
+Victoria,1987–1991,25–29,38.0,Millennials
+Victoria,1987–1991,30–34,51.9,Millennials
+Victoria,1992–1996,25–29,36.6,Millennials
+Queensland,1947–1951,25–29,54.6,Baby Boomers
+Queensland,1947–1951,30–34,66.8,Baby Boomers
+Queensland,1947–1951,35–39,70.6,Baby Boomers
+Queensland,1947–1951,40-44,72.8,Baby Boomers
+Queensland,1947–1951,45-49,75.0,Baby Boomers
+Queensland,1947–1951,50-54,76.1,Baby Boomers
+Queensland,1947–1951,55-59,78.7,Baby Boomers
+Queensland,1947–1951,60–64,79.0,Baby Boomers
+Queensland,1947–1951,65–69,79.6,Baby Boomers
+Queensland,1947–1951,70–74,79.8,Baby Boomers
+Queensland,1952–1956,25–29,53.4,Baby Boomers
+Queensland,1952–1956,30–34,63.6,Baby Boomers
+Queensland,1952–1956,35–39,67.2,Baby Boomers
+Queensland,1952–1956,40-44,70.8,Baby Boomers
+Queensland,1952–1956,45-49,72.8,Baby Boomers
+Queensland,1952–1956,50-54,75.7,Baby Boomers
+Queensland,1952–1956,55-59,76.2,Baby Boomers
+Queensland,1952–1956,60–64,76.9,Baby Boomers
+Queensland,1952–1956,65–69,78.5,Baby Boomers
+Queensland,1957–1961,25–29,50.4,Baby Boomers
+Queensland,1957–1961,30–34,57.6,Baby Boomers
+Queensland,1957–1961,35–39,64.7,Baby Boomers
+Queensland,1957–1961,40-44,67.8,Baby Boomers
+Queensland,1957–1961,45-49,72.0,Baby Boomers
+Queensland,1957–1961,50-54,72.8,Baby Boomers
+Queensland,1957–1961,55-59,73.7,Baby Boomers
+Queensland,1957–1961,60–64,75.9,Baby Boomers
+Queensland,1962–1966,25–29,43.5,Generation X
+Queensland,1962–1966,30–34,55.4,Generation X
+Queensland,1962–1966,35–39,61.5,Generation X
+Queensland,1962–1966,40-44,67.8,Generation X
+Queensland,1962–1966,45-49,68.7,Generation X
+Queensland,1962–1966,50-54,70.1,Generation X
+Queensland,1962–1966,55-59,72.9,Generation X
+Queensland,1967–1971,25–29,40.1,Generation X
+Queensland,1967–1971,30–34,52.8,Generation X
+Queensland,1967–1971,35–39,62.3,Generation X
+Queensland,1967–1971,40-44,64.0,Generation X
+Queensland,1967–1971,45-49,66.0,Generation X
+Queensland,1967–1971,50-54,69.7,Generation X
+Queensland,1972–1976,25–29,38.8,Generation X
+Queensland,1972–1976,30–34,55.0,Generation X
+Queensland,1972–1976,35–39,58.8,Generation X
+Queensland,1972–1976,40-44,61.7,Generation X
+Queensland,1972–1976,45-49,66.6,Generation X
+Queensland,1977–1981,25–29,41.9,Generation X
+Queensland,1977–1981,30–34,50.7,Generation X
+Queensland,1977–1981,35–39,55.9,Generation X
+Queensland,1977–1981,40-44,62.7,Generation X
+Queensland,1982–1986,25–29,38.7,Millennials
+Queensland,1982–1986,30–34,47.8,Millennials
+Queensland,1982–1986,35–39,57.7,Millennials
+Queensland,1987–1991,25–29,34.6,Millennials
+Queensland,1987–1991,30–34,48.6,Millennials
+Queensland,1992–1996,25–29,35.2,Millennials
+Western Australia,1947–1951,25–29,53.7,Baby Boomers
+Western Australia,1947–1951,30–34,66.5,Baby Boomers
+Western Australia,1947–1951,35–39,71.5,Baby Boomers
+Western Australia,1947–1951,40-44,75.6,Baby Boomers
+Western Australia,1947–1951,45-49,79.6,Baby Boomers
+Western Australia,1947–1951,50-54,81.2,Baby Boomers
+Western Australia,1947–1951,55-59,81.7,Baby Boomers
+Western Australia,1947–1951,60–64,82.0,Baby Boomers
+Western Australia,1947–1951,65–69,83.4,Baby Boomers
+Western Australia,1947–1951,70–74,83.1,Baby Boomers
+Western Australia,1952–1956,25–29,52.1,Baby Boomers
+Western Australia,1952–1956,30–34,65.0,Baby Boomers
+Western Australia,1952–1956,35–39,70.3,Baby Boomers
+Western Australia,1952–1956,40-44,75.6,Baby Boomers
+Western Australia,1952–1956,45-49,78.3,Baby Boomers
+Western Australia,1952–1956,50-54,79.2,Baby Boomers
+Western Australia,1952–1956,55-59,79.8,Baby Boomers
+Western Australia,1952–1956,60–64,81.4,Baby Boomers
+Western Australia,1952–1956,65–69,82.1,Baby Boomers
+Western Australia,1957–1961,25–29,52.5,Baby Boomers
+Western Australia,1957–1961,30–34,61.2,Baby Boomers
+Western Australia,1957–1961,35–39,69.9,Baby Boomers
+Western Australia,1957–1961,40-44,74.6,Baby Boomers
+Western Australia,1957–1961,45-49,76.2,Baby Boomers
+Western Australia,1957–1961,50-54,77.0,Baby Boomers
+Western Australia,1957–1961,55-59,79.1,Baby Boomers
+Western Australia,1957–1961,60–64,80.2,Baby Boomers
+Western Australia,1962–1966,25–29,48.1,Generation X
+Western Australia,1962–1966,30–34,62.3,Generation X
+Western Australia,1962–1966,35–39,69.4,Generation X
+Western Australia,1962–1966,40-44,72.5,Generation X
+Western Australia,1962–1966,45-49,73.5,Generation X
+Western Australia,1962–1966,50-54,76.3,Generation X
+Western Australia,1962–1966,55-59,78.2,Generation X
+Western Australia,1967–1971,25–29,47.8,Generation X
+Western Australia,1967–1971,30–34,62.2,Generation X
+Western Australia,1967–1971,35–39,67.8,Generation X
+Western Australia,1967–1971,40-44,68.7,Generation X
+Western Australia,1967–1971,45-49,73.1,Generation X
+Western Australia,1967–1971,50-54,75.8,Generation X
+Western Australia,1972–1976,25–29,49.7,Generation X
+Western Australia,1972–1976,30–34,61.5,Generation X
+Western Australia,1972–1976,35–39,63.8,Generation X
+Western Australia,1972–1976,40-44,68.9,Generation X
+Western Australia,1972–1976,45-49,73.1,Generation X
+Western Australia,1977–1981,25–29,50.9,Generation X
+Western Australia,1977–1981,30–34,56.7,Generation X
+Western Australia,1977–1981,35–39,64.0,Generation X
+Western Australia,1977–1981,40-44,69.5,Generation X
+Western Australia,1982–1986,25–29,46.1,Millennials
+Western Australia,1982–1986,30–34,57.0,Millennials
+Western Australia,1982–1986,35–39,65.0,Millennials
+Western Australia,1987–1991,25–29,46.3,Millennials
+Western Australia,1987–1991,30–34,56.4,Millennials
+Western Australia,1992–1996,25–29,43.4,Millennials
+South Australia,1947–1951,25–29,57.2,Baby Boomers
+South Australia,1947–1951,30–34,71.2,Baby Boomers
+South Australia,1947–1951,35–39,73.9,Baby Boomers
+South Australia,1947–1951,40-44,76.5,Baby Boomers
+South Australia,1947–1951,45-49,79.1,Baby Boomers
+South Australia,1947–1951,50-54,80.9,Baby Boomers
+South Australia,1947–1951,55-59,81.7,Baby Boomers
+South Australia,1947–1951,60–64,81.5,Baby Boomers
+South Australia,1947–1951,65–69,81.0,Baby Boomers
+South Australia,1947–1951,70–74,80.8,Baby Boomers
+South Australia,1952–1956,25–29,57.0,Baby Boomers
+South Australia,1952–1956,30–34,66.9,Baby Boomers
+South Australia,1952–1956,35–39,71.0,Baby Boomers
+South Australia,1952–1956,40-44,75.2,Baby Boomers
+South Australia,1952–1956,45-49,77.7,Baby Boomers
+South Australia,1952–1956,50-54,79.2,Baby Boomers
+South Australia,1952–1956,55-59,79.5,Baby Boomers
+South Australia,1952–1956,60–64,79.7,Baby Boomers
+South Australia,1952–1956,65–69,80.7,Baby Boomers
+South Australia,1957–1961,25–29,54.3,Baby Boomers
+South Australia,1957–1961,30–34,62.3,Baby Boomers
+South Australia,1957–1961,35–39,70.3,Baby Boomers
+South Australia,1957–1961,40-44,74.1,Baby Boomers
+South Australia,1957–1961,45-49,76.6,Baby Boomers
+South Australia,1957–1961,50-54,76.8,Baby Boomers
+South Australia,1957–1961,55-59,77.6,Baby Boomers
+South Australia,1957–1961,60–64,79.3,Baby Boomers
+South Australia,1962–1966,25–29,50.2,Generation X
+South Australia,1962–1966,30–34,63.7,Generation X
+South Australia,1962–1966,35–39,69.9,Generation X
+South Australia,1962–1966,40-44,72.8,Generation X
+South Australia,1962–1966,45-49,73.5,Generation X
+South Australia,1962–1966,50-54,74.8,Generation X
+South Australia,1962–1966,55-59,76.9,Generation X
+South Australia,1967–1971,25–29,49.7,Generation X
+South Australia,1967–1971,30–34,63.1,Generation X
+South Australia,1967–1971,35–39,68.6,Generation X
+South Australia,1967–1971,40-44,69.5,Generation X
+South Australia,1967–1971,45-49,71.5,Generation X
+South Australia,1967–1971,50-54,74.2,Generation X
+South Australia,1972–1976,25–29,50.4,Generation X
+South Australia,1972–1976,30–34,62.6,Generation X
+South Australia,1972–1976,35–39,64.9,Generation X
+South Australia,1972–1976,40-44,67.4,Generation X
+South Australia,1972–1976,45-49,70.8,Generation X
+South Australia,1977–1981,25–29,50.5,Generation X
+South Australia,1977–1981,30–34,57.9,Generation X
+South Australia,1977–1981,35–39,62.2,Generation X
+South Australia,1977–1981,40-44,67.7,Generation X
+South Australia,1982–1986,25–29,46.6,Millennials
+South Australia,1982–1986,30–34,54.9,Millennials
+South Australia,1982–1986,35–39,62.4,Millennials
+South Australia,1987–1991,25–29,42.7,Millennials
+South Australia,1987–1991,30–34,55.2,Millennials
+South Australia,1992–1996,25–29,42.4,Millennials
+Tasmania,1947–1951,25–29,58.8,Baby Boomers
+Tasmania,1947–1951,30–34,69.4,Baby Boomers
+Tasmania,1947–1951,35–39,75.4,Baby Boomers
+Tasmania,1947–1951,40-44,78.2,Baby Boomers
+Tasmania,1947–1951,45-49,81.1,Baby Boomers
+Tasmania,1947–1951,50-54,82.3,Baby Boomers
+Tasmania,1947–1951,55-59,82.9,Baby Boomers
+Tasmania,1947–1951,60–64,82.5,Baby Boomers
+Tasmania,1947–1951,65–69,82.5,Baby Boomers
+Tasmania,1947–1951,70–74,83.4,Baby Boomers
+Tasmania,1952–1956,25–29,54.8,Baby Boomers
+Tasmania,1952–1956,30–34,69.0,Baby Boomers
+Tasmania,1952–1956,35–39,73.1,Baby Boomers
+Tasmania,1952–1956,40-44,77.1,Baby Boomers
+Tasmania,1952–1956,45-49,79.4,Baby Boomers
+Tasmania,1952–1956,50-54,80.8,Baby Boomers
+Tasmania,1952–1956,55-59,80.9,Baby Boomers
+Tasmania,1952–1956,60–64,81.0,Baby Boomers
+Tasmania,1952–1956,65–69,82.7,Baby Boomers
+Tasmania,1957–1961,25–29,55.8,Baby Boomers
+Tasmania,1957–1961,30–34,64.1,Baby Boomers
+Tasmania,1957–1961,35–39,72.4,Baby Boomers
+Tasmania,1957–1961,40-44,76.0,Baby Boomers
+Tasmania,1957–1961,45-49,78.6,Baby Boomers
+Tasmania,1957–1961,50-54,79.0,Baby Boomers
+Tasmania,1957–1961,55-59,79.5,Baby Boomers
+Tasmania,1957–1961,60–64,81.7,Baby Boomers
+Tasmania,1962–1966,25–29,52.2,Generation X
+Tasmania,1962–1966,30–34,64.6,Generation X
+Tasmania,1962–1966,35–39,70.7,Generation X
+Tasmania,1962–1966,40-44,74.2,Generation X
+Tasmania,1962–1966,45-49,75.2,Generation X
+Tasmania,1962–1966,50-54,76.3,Generation X
+Tasmania,1962–1966,55-59,78.8,Generation X
+Tasmania,1967–1971,25–29,49.8,Generation X
+Tasmania,1967–1971,30–34,62.9,Generation X
+Tasmania,1967–1971,35–39,69.8,Generation X
+Tasmania,1967–1971,40-44,70.9,Generation X
+Tasmania,1967–1971,45-49,72.4,Generation X
+Tasmania,1967–1971,50-54,76.0,Generation X
+Tasmania,1972–1976,25–29,49.4,Generation X
+Tasmania,1972–1976,30–34,63.1,Generation X
+Tasmania,1972–1976,35–39,66.5,Generation X
+Tasmania,1972–1976,40-44,68.4,Generation X
+Tasmania,1972–1976,45-49,72.4,Generation X
+Tasmania,1977–1981,25–29,50.7,Generation X
+Tasmania,1977–1981,30–34,59.6,Generation X
+Tasmania,1977–1981,35–39,63.5,Generation X
+Tasmania,1977–1981,40-44,68.5,Generation X
+Tasmania,1982–1986,25–29,48.4,Millennials
+Tasmania,1982–1986,30–34,55.7,Millennials
+Tasmania,1982–1986,35–39,61.3,Millennials
+Tasmania,1987–1991,25–29,44.4,Millennials
+Tasmania,1987–1991,30–34,52.3,Millennials
+Tasmania,1992–1996,25–29,42.7,Millennials
+Australian Capital Territory,1947–1951,25–29,56.8,Baby Boomers
+Australian Capital Territory,1947–1951,30–34,72.3,Baby Boomers
+Australian Capital Territory,1947–1951,35–39,73.8,Baby Boomers
+Australian Capital Territory,1947–1951,40-44,77.3,Baby Boomers
+Australian Capital Territory,1947–1951,45-49,80.7,Baby Boomers
+Australian Capital Territory,1947–1951,50-54,84.2,Baby Boomers
+Australian Capital Territory,1947–1951,55-59,85.8,Baby Boomers
+Australian Capital Territory,1947–1951,60–64,85.4,Baby Boomers
+Australian Capital Territory,1947–1951,65–69,85.8,Baby Boomers
+Australian Capital Territory,1947–1951,70–74,85.6,Baby Boomers
+Australian Capital Territory,1952–1956,25–29,56.6,Baby Boomers
+Australian Capital Territory,1952–1956,30–34,64.0,Baby Boomers
+Australian Capital Territory,1952–1956,35–39,68.9,Baby Boomers
+Australian Capital Territory,1952–1956,40-44,73.8,Baby Boomers
+Australian Capital Territory,1952–1956,45-49,79.5,Baby Boomers
+Australian Capital Territory,1952–1956,50-54,81.5,Baby Boomers
+Australian Capital Territory,1952–1956,55-59,81.8,Baby Boomers
+Australian Capital Territory,1952–1956,60–64,83.2,Baby Boomers
+Australian Capital Territory,1952–1956,65–69,83.7,Baby Boomers
+Australian Capital Territory,1957–1961,25–29,49.4,Baby Boomers
+Australian Capital Territory,1957–1961,30–34,58.0,Baby Boomers
+Australian Capital Territory,1957–1961,35–39,66.6,Baby Boomers
+Australian Capital Territory,1957–1961,40-44,74.4,Baby Boomers
+Australian Capital Territory,1957–1961,45-49,76.9,Baby Boomers
+Australian Capital Territory,1957–1961,50-54,78.2,Baby Boomers
+Australian Capital Territory,1957–1961,55-59,79.5,Baby Boomers
+Australian Capital Territory,1957–1961,60–64,81.3,Baby Boomers
+Australian Capital Territory,1962–1966,25–29,42.5,Generation X
+Australian Capital Territory,1962–1966,30–34,57.4,Generation X
+Australian Capital Territory,1962–1966,35–39,67.5,Generation X
+Australian Capital Territory,1962–1966,40-44,72.7,Generation X
+Australian Capital Territory,1962–1966,45-49,74.0,Generation X
+Australian Capital Territory,1962–1966,50-54,76.2,Generation X
+Australian Capital Territory,1962–1966,55-59,79.2,Generation X
+Australian Capital Territory,1967–1971,25–29,41.5,Generation X
+Australian Capital Territory,1967–1971,30–34,59.1,Generation X
+Australian Capital Territory,1967–1971,35–39,66.5,Generation X
+Australian Capital Territory,1967–1971,40-44,69.5,Generation X
+Australian Capital Territory,1967–1971,45-49,72.2,Generation X
+Australian Capital Territory,1967–1971,50-54,76.3,Generation X
+Australian Capital Territory,1972–1976,25–29,44.2,Generation X
+Australian Capital Territory,1972–1976,30–34,57.4,Generation X
+Australian Capital Territory,1972–1976,35–39,63.3,Generation X
+Australian Capital Territory,1972–1976,40-44,67.9,Generation X
+Australian Capital Territory,1972–1976,45-49,73.0,Generation X
+Australian Capital Territory,1977–1981,25–29,40.8,Generation X
+Australian Capital Territory,1977–1981,30–34,55.3,Generation X
+Australian Capital Territory,1977–1981,35–39,61.4,Generation X
+Australian Capital Territory,1977–1981,40-44,69.4,Generation X
+Australian Capital Territory,1982–1986,25–29,40.4,Millennials
+Australian Capital Territory,1982–1986,30–34,52.6,Millennials
+Australian Capital Territory,1982–1986,35–39,63.8,Millennials
+Australian Capital Territory,1987–1991,25–29,36.1,Millennials
+Australian Capital Territory,1987–1991,30–34,53.3,Millennials
+Australian Capital Territory,1992–1996,25–29,37.2,Millennials
+Northern Territory,1947–1951,25–29,22.6,Baby Boomers
+Northern Territory,1947–1951,30–34,33.4,Baby Boomers
+Northern Territory,1947–1951,35–39,43.4,Baby Boomers
+Northern Territory,1947–1951,40-44,50.2,Baby Boomers
+Northern Territory,1947–1951,45-49,57.0,Baby Boomers
+Northern Territory,1947–1951,50-54,61.6,Baby Boomers
+Northern Territory,1947–1951,55-59,63.3,Baby Boomers
+Northern Territory,1947–1951,60–64,64.5,Baby Boomers
+Northern Territory,1947–1951,65–69,65.9,Baby Boomers
+Northern Territory,1947–1951,70–74,67.6,Baby Boomers
+Northern Territory,1952–1956,25–29,23.0,Baby Boomers
+Northern Territory,1952–1956,30–34,37.1,Baby Boomers
+Northern Territory,1952–1956,35–39,44.8,Baby Boomers
+Northern Territory,1952–1956,40-44,52.5,Baby Boomers
+Northern Territory,1952–1956,45-49,56.9,Baby Boomers
+Northern Territory,1952–1956,50-54,61.5,Baby Boomers
+Northern Territory,1952–1956,55-59,62.0,Baby Boomers
+Northern Territory,1952–1956,60–64,61.4,Baby Boomers
+Northern Territory,1952–1956,65–69,64.7,Baby Boomers
+Northern Territory,1957–1961,25–29,27.4,Baby Boomers
+Northern Territory,1957–1961,30–34,36.3,Baby Boomers
+Northern Territory,1957–1961,35–39,45.1,Baby Boomers
+Northern Territory,1957–1961,40-44,53.0,Baby Boomers
+Northern Territory,1957–1961,45-49,57.4,Baby Boomers
+Northern Territory,1957–1961,50-54,58.0,Baby Boomers
+Northern Territory,1957–1961,55-59,59.3,Baby Boomers
+Northern Territory,1957–1961,60–64,60.6,Baby Boomers
+Northern Territory,1962–1966,25–29,22.6,Generation X
+Northern Territory,1962–1966,30–34,39.3,Generation X
+Northern Territory,1962–1966,35–39,45.8,Generation X
+Northern Territory,1962–1966,40-44,53.1,Generation X
+Northern Territory,1962–1966,45-49,55.0,Generation X
+Northern Territory,1962–1966,50-54,56.7,Generation X
+Northern Territory,1962–1966,55-59,59.3,Generation X
+Northern Territory,1967–1971,25–29,26.7,Generation X
+Northern Territory,1967–1971,30–34,38.7,Generation X
+Northern Territory,1967–1971,35–39,46.8,Generation X
+Northern Territory,1967–1971,40-44,50.3,Generation X
+Northern Territory,1967–1971,45-49,51.7,Generation X
+Northern Territory,1967–1971,50-54,56.5,Generation X
+Northern Territory,1972–1976,25–29,28.4,Generation X
+Northern Territory,1972–1976,30–34,40.4,Generation X
+Northern Territory,1972–1976,35–39,44.3,Generation X
+Northern Territory,1972–1976,40-44,47.3,Generation X
+Northern Territory,1972–1976,45-49,53.7,Generation X
+Northern Territory,1977–1981,25–29,29.9,Generation X
+Northern Territory,1977–1981,30–34,37.2,Generation X
+Northern Territory,1977–1981,35–39,40.3,Generation X
+Northern Territory,1977–1981,40-44,48.2,Generation X
+Northern Territory,1982–1986,25–29,25.9,Millennials
+Northern Territory,1982–1986,30–34,32.3,Millennials
+Northern Territory,1982–1986,35–39,40.1,Millennials
+Northern Territory,1987–1991,25–29,23.9,Millennials
+Northern Territory,1987–1991,30–34,31.8,Millennials
+Northern Territory,1992–1996,25–29,21.3,Millennials

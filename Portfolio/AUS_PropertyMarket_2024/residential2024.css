@@ -1,0 +1,27 @@
+#state-selector {
+	width: 80%;
+	height: 60px;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.selected-button {
+	background-color: rgba(var(--primary-color));
+	color: white;
+}
+#state-selector button {
+	width: 10%;
+	height: 40px;
+	margin: auto;
+	/* background-color: transparent; */
+	border: 3px solid rgba(var(--primary-color));
+	border-radius: 10px;
+	font-size: 16px;
+	transition: 0.3;
+}
+
+#state-selector button:hover {
+	background-color: rgba(var(--primary-color));
+	color: white;
+}
