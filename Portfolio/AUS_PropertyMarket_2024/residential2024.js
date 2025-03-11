@@ -1,7 +1,12 @@
 const input1 = d3.csv("data/home_ownership_rates.csv");
+const input2 = d3.csv("data/median_price_capital.csv");
 var clickedState = "Australia";
 input1.then(function (data) {
 	lineplot(data, "Australia");
+});
+
+input2.then(function (data) {
+	lineChart(data);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -54,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function lineplot(data, clickedState) {
 	var svg = d3.select("#chart01").append("svg").attr("width", "100%");
-	var height = 800;
+	var height = 600;
 	var width = d3.select("#chart01 svg").node().getBoundingClientRect().width;
 	var margin = { top: 20, right: 120, bottom: 60, left: 120 };
 	svg.attr("width", width).attr("height", height);
@@ -173,4 +178,28 @@ function lineplot(data, clickedState) {
 			.style("text-transform", "capitalize")
 			.text(generation);
 	});
+}
+
+function lineChart(data) {
+	var svg = d3.select("#chart02").append("svg").attr("width", "100%");
+	var height = 600;
+	var width = d3.select("#chart02 svg").node().getBoundingClientRect().width;
+	var margin = { top: 20, right: 120, bottom: 60, left: 120 };
+	svg.attr("width", width).attr("height", height);
+
+	// import data
+	var capitalCity = [
+		"Sydney",
+		"Melbourne",
+		"Brisbane",
+		"Perth",
+		"Adelaide",
+		"ACT",
+	];
+	var period = Array.from(new Set(data.map((d) => d.Period))).map(
+		(d) => new Date(d)
+	);
+
+	console.log(data);
+	console.log(period);
 }
