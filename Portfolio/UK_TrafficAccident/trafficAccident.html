@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3Y42HX43QM"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-3Y42HX43QM");
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Traffic Accidents</title>
+
+		<!-- D3.js API -->
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.js"></script>
+
+		<!-- Font API -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Style Sheet -->
+		<link rel="stylesheet" href="trafficAccident.css" />
+		<link rel="stylesheet" href="../../Resource/stylesheet/masterStyles.css" />
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header class="nav-bar">
+			<nav>
+				<a class="nav-logo" href="../../index.html">
+					<img class="logo-icon" src="../../Resource/images/logo-icon.png" />
+				</a>
+				<ul class="nav-links">
+					<li><a href="../portfolio.html">Portfolio</a></li>
+					<li><a href="../../About/about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Snakey Chart Section -->
+		<section class="bg">
+			<br />
+			<br />
+			<br />
+			<br />
+			<h1>UK Traffic Accidents</h1>
+			<h4>(Latest of 2024)</h4>
+			<br />
+			<p class="copy-heading">Road accidents concern in UK</p>
+			<p class="copy-content">
+				Road traffic accidents are a clear public safety concern occurring in
+				the United Kingdom, unfortunately resulting in thousands of fatalities,
+				serious injuries and economic losses annually. The UK Department for
+				Transport (2023) reports 1,558 fatalities and 27,450 serious injuries on
+				the UK roads in 2023. It is essential that the root causes of the
+				incidents are addressed, as this will improve the safety of the road,
+				optimize the economy and most importantly reduce the amount of accident
+				casualties (Peden, Sleet, Mohan 2020). Through a thorough statistical
+				analysis, the project will provide valuable insights to ensure the issue
+				can be addressed accordingly.
+			</p>
+			<br />
+			<p class="copy-heading">Exploring the root cause through analytics</p>
+			<div class="graphic-container" style="object-fit: contain">
+				<img
+					src="data/figure1.png"
+					alt=""
+					style="width: 100%; margin: 5%; width: 90%; height: 90%"
+				/>
+			</div>
+			<p class="copy-content">
+				The bar chart shows the number of accidents while the line chart
+				demonstrates the percentage of difference by quarter from the 2019 to
+				2022 period. Overall, there is a downward trend in the number of
+				accidents, reducing from 44,360 to 35,823 cases per quarter. Noticeably,
+				there is a significant decrease in the first quarter of each year with
+				the highest of -18,24% in 2022. However, accidents tend to reinstate in
+				the second quarter with the highest increase of 8.24% in 2022. Using
+				linear regression as predictive models, a slope of -7.416 and intercept
+				of 368,709 can be interpreted as nearly 7.5 accidents are reduced per
+				day.
+			</p>
+			<div class="graphic-container" style="object-fit: contain">
+				<img
+					src="data/figure2.png"
+					alt=""
+					style="width: 100%; margin: 5%; width: 90%; height: 90%"
+				/>
+			</div>
+			<br />
+			<p class="copy-content">
+				During the examination of geographical mapping, the top 20 districts
+				area with highest accident numbers, highlighted in red dot, are
+				considered since they are metropolitan areas with dense traffic. It can
+				be inferred that Birmingham and Leeds appear to stand out being black
+				spots for traffic users where 13,491 and 8,898 accidents occurred over
+				the four-year period. It also raises concern for Birmingham when it
+				records 2.5 times the average number of other metros (5,308) and 8.6
+				times average of the entire UK (1,566).
+			</p>
+			<p class="copy-content">
+				As the UK is known for its moist and temperate weather, we will closely
+				examine the road and weather conditions that may affect or cause these
+				incidents. A combination of heatmap and pie chart is employed to
+				identify the determining factors.
+			</p>
+			<br />
+			<div class="graphic-container" style="object-fit: contain">
+				<img
+					src="data/figure3.png"
+					alt=""
+					style="width: 100%; margin: 5%; width: 90%; height: 90%"
+				/>
+			</div>
+			<br />
+			<p class="copy-content">
+				The heatmap highlights accidents tend to happen in single carriageway
+				with 332,698 incidents in dry road and 138,743 in wet or damp road.
+				Meanwhile, the pie charts reveal accidents majorly occur in the most
+				ideal driving condition such as fine weather and clear daylight. In fine
+				weather without high wind, the fact that 76.54% of vehicular impact
+				occurs in daylight signifies the importance of driver behavior and
+				awareness in their daily commute.
+			</p>
+			<p class="copy-content">
+				Therefore, direct safety measures can be implemented such as increasing
+				the number of road signs with reflective materials, using real time
+				adjusted traffic control, enforcing lower speed limits in high-risk
+				zones, and installing more speed and red-light cameras. These
+				initiatives can deliver immediate results, especially in the populated
+				area mentioned above; however, the cost of new infrastructure can
+				quickly add-up and lessen the scalability of this project.
+			</p>
+			<br />
+			<div class="graphic-container" style="object-fit: contain">
+				<img
+					src="data/figure4.png"
+					alt=""
+					style="width: 100%; margin: 5%; width: 90%; height: 90%"
+				/>
+			</div>
+			<br />
+			<p class="copy-content">
+				A calculated field created with the number of casualties being divided
+				by number of accidents and marked by severity type shows how intense it
+				can be in a traffic accident. Remarkably, the figure of 1.97 casualties
+				per accident in a fatal collision in 2019 has dropped down to 1.84 in
+				2022. This suggests that safety features on vehicles have advanced over
+				the year, deflecting the impact and reducing the severity of the
+				accident. Therefore, transportation agencies can use this profound
+				information and promote vehicles with high protection standards, such as
+				five-star ANCAP rating. Especially, we could encourage parents to buy
+				their teenagers a decent car with safety features as they are
+				inexperienced drivers.
+			</p>
+			<br />
+			<div class="graphic-container" style="object-fit: contain">
+				<img
+					src="data/figure5.png"
+					alt=""
+					style="width: 100%; margin: 5%; width: 90%; height: 90%"
+				/>
+			</div>
+			<br />
+			<p class="copy-content">
+				When analysing the different regulation settings, two thirds of
+				accidents, from 62.90% to 65.08%, happen on urban roads. This can be
+				explained by several factors such as road design, peak-hour, visual
+				obstacles, and mixed used of vehicle. Recent studies show 27% of
+				accidents are caused by slow driving (Harrington, P, Thomas, P & Dunne,
+				C 2021). More importantly, the urban characteristic can increase driver
+				stress level and anxiety that lead to fatigue as travelling time
+				increases during peak hour.
+			</p>
+			<br />
+			<br />
+			<p class="copy-heading">Prevention through behavioral reinforcement</p>
+			<p class="copy-content">
+				As a part of effective planning, encouraging mixed travelling modes or
+				in between recess in a large-scale campaign with extensive time span can
+				gradually alternate driver awareness for their own safety. On a broader
+				scale, the government could consider increasing supervised driving for
+				learners up to 60 hours with 15 hours dedicated to inner city driving,
+				compared to the current standard of 45 hours. Regulatory incentives such
+				as free renewal of license if drivers have not received any demerit
+				points in the last two years can promote positive reinforcement toward
+				behavioral change.
+			</p>
+			<p class="copy-content">
+				In conclusion, the data reveals that most accidents occur under fine
+				weather and clear daylight conditions, suggesting that external factors
+				like road conditions or visibility are not the primary causes. Moreover,
+				the analysis revealed that road design, high traffic during peak-hours,
+				and visual obstacles are the major factors resulting in occurrence of
+				two-third of the accidents on the urban roads. Additionally, the other
+				reasons for more accidents in urban areas are due to congestion, stress,
+				and fatigue – further emphasizing the need to address driver habits
+				rather than solely relying on infrastructure upgrades.
+			</p>
+			<br />
+			<br />
+			<div class="button-container">
+				<a href="../portfolio.html"
+					><button class="back-button">Back to Portfolio</button></a
+				>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="bg-light" id="my-footer">
+			<div class="footer-container" id="Copyright">
+				<p>Copyright by Viz Venture 2024</p>
+			</div>
+			<div class="footer-container" id="Policy">
+				<a href="../../About/about.html">by Ronny</a>
+				<a href="">NSW, Australia</a>
+			</div>
+		</footer>
+	</body>
+</html>
